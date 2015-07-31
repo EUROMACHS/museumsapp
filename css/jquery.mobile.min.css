@@ -29,10 +29,14 @@
 
 /* Zentrierung von allem */
 .allpages{
-  margin: 0 auto;
-  text-align: center;
+	margin: 0 auto;
+	text-align: center;
 }
 
+/* keine Outline bei Image Map */
+area { 
+	outline:none 
+} 
 
 
 

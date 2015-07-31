@@ -6,19 +6,43 @@
 		<!-- CSS -->
         <link rel="stylesheet" href="css/jquery-tilesgallery.css" />
 		<link rel="stylesheet" href="css/jquery.mobile.min.css" /> 
+		<!-- eigenes CSS --> 
+		
         <!-- JQuery -->
 		<script src="js/vendor/jquery-1.8.3.min.js"></script>
 		<script src="js/vendor/jquery.mobile.min.js"></script>
         <script src="js/jquery.tiles-gallery.js"></script>
 		<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+		<!-- eigenes JQuery -->
+		<script src="js/museumsapp.js"></script>
+		
         <script>
-            
+			
 			<!-- für Kachel-Galerie --> 
 			$(function () {
                 $(".tiles").tilesGallery({
                     tileMinHeight: 200
                 });
-            });      
+            });   
+
+			<!-- für Image Map --> 
+			$(document).ready(function(ev) {
+
+				$( window ).hashchange(function() {
+					 setTimeout( function() {
+					$('img[usemap]').rwdImageMaps();
+					},200);
+				});
+			});
+
+			<!-- für Popup in der Image Map -->
+			$(document).ready(function(e) {
+                $('area').on('click', function(event) {
+                    event.preventDefault();/* wenn man diese Zeile entfernt öffnet/schließt sich Popup sofort */
+                    var sel= $(this).attr('href');
+                    $(sel).popup("open")
+                });
+            });
 			
         </script>
     </head>
@@ -74,6 +98,8 @@
 						<img src="img/muse_de_picasso.jpg" />
 					</a>
 				</div>  
+				<p>Das Museo Nacional Centro de Arte Reina Sofía, kurz MNCARS, ist ein Kunstmuseum, Pinakothek und Bibliothek, in Madrid gelegen. Das spanische Nationalmuseum Zentrum der Künste Königin Sofia wurde am 10. September 1992 durch die namensgebende spanische Königin Sofia gemeinsam mit König Juan Carlos I. eingeweiht.</p>
+				<a data-transition="fade" href="http:www.museoreinasofia.es/" target="blank" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left ui-mini">Mehr über Museo Reina Sofia</a>
 			</div>
 			
 			<div data-role="footer">
@@ -81,9 +107,48 @@
 			</div>
 		</div>
         
-		
+<!-- Detail-Ansicht des Werks --> 
+		<div data-role="page" id="seite2">
 			
-		</div>
+			<div data-role="header">
+				<a href="#seite1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" data-transition="fade">Home</a>
+				<h1>Wo sind Picassos Werke!</h1>
+				<a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-info ui-btn-icon-right">App-Info</a>
+				<div data-role="popup" id="myPopup3">
+				  <p>Klicke auf die Details im Bild um Zusatz-Informationen zu erhalten.</p>
+				</div>
+			</div>
+			
+			<div data-role="content" >
+				<h1>Guernica</h1>
+				<h2>1937 | Öl auf Leinwand | 349 x 777 cm | Museo Reina Sofia</h2>
+				<img src="img/marker/m_guernica.jpg" alt="Guernica" title="Guernica" class="responsive-image" usemap="#Guernica"/>
+				<map id="Guernica" name="Guernica" >
+					<area shape="rect" coords="24,104,738,472" href="#PopupGuernica1" data-rel="popup" alt="Stier" title="Stier" />
+					<area shape="rect" coords="1346,546,2148,962" href="#PopupGuernica2" data-rel="popup" alt="Menschen" title="Menschen" />
+					<area shape="rect" coords="2432,2,3187,422" href="#PopupGuernica3" data-rel="popup" alt="Brennendes Haus" title="Brennendes Haus" />
+				</map>
+				<div data-role="popup" id="PopupGuernica1">
+					<p>Viele Dinge im Bild 
+							bleiben rätselhaft, vor allem die inhaltiche Bedeutung des mächtigen Stieres. Er kann als Zeichen für die Brutalität der Angreifer ebenso 
+							gelesen werden wie als Zeichen für das bedrohte Spanien.</p>
+				</div>
+				<div data-role="popup" id="PopupGuernica2">
+					<p>Hier stellt Picasso das Leid der Bevölkerung Guernicas dar. Fliehende Menschen mit schmerz- und angstverzerrten Gesichtern türmen sich in der gesamten unteren Bildhälfte.</p>
+				</div>	
+				<div data-role="popup" id="PopupGuernica3">
+					<p>Die totbringenden Bomben sind in Picassos Werk nicht zu sehen. Die folgen der Attacke stellt der Künstler durch das brennende Haus und die gehetzten Menschen dar.</p>
+				</div>
+				
+				<p>Pablo Picasso wurde im Januar 1937 von der spanischen-republikanischen Regierung (kurzer Exkurs zur spanischen Geschichte) beauftragt, 
+				ein Wandbild für den spanischen Pavillon auf der Weltausstellung in Paris zu malen. Es sollte auf die aktuelle Situation in Spanien, 
+				den Bürgerkrieg, aufmerksam machen. Sein Bild wurde an die Wand direkt neben dem Eingang plaziert werden, da sie prominent und die einzige 
+				wettergeschützte Stelle im Erdgeschoß war. (Für das Werk wurden ihm $ 7.500 angeboten.).</p>
+			</div>
+
+			<div data-role="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+			</div>
 		
     </body>
 </html>
