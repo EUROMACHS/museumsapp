@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Picasso Kachel-Galerie</title>
+		<!-- CSS -->
+        <link rel="stylesheet" href="css/jquery-tilesgallery.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" /> 
+        <!-- JQuery -->
+		<script src="js/vendor/jquery-1.8.3.min.js"></script>
+		<script src="js/vendor/jquery.mobile.min.js"></script>
+        <script src="js/jquery.tiles-gallery.js"></script>
+		<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+        <script>
+            
+			<!-- für Kachel-Galerie --> 
+			$(function () {
+                $(".tiles").tilesGallery({
+                    tileMinHeight: 200
+                });
+            });      
+			
+        </script>
+    </head>
+    <body>
+        
+		<!-- Galerie-Seite --> 
+		<div data-role="page" id="seite1">
+			
+			<div data-role="header">
+				<a href="#seite1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" data-transition="fade">Home</a>
+				<h1>Wo sind Picassos Werke!</h1>
+				<a href="#myPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-info ui-btn-icon-right">App-Info</a>
+				<div data-role="popup" id="myPopup4">
+				  <p>Klicke auf die Kacheln um mehr über die Werke von Picasso zu erfahren.</p>
+				</div>
+			</div>
+
+			
+			<div data-role="content">
+				<h1>Werke von Picasso</h1>
+				<p>Hier findest du Picassos Werke, die im Blabla-Museum zu finden sind.</p>
+				<div id="example" class="tiles">
+					<a href="#seite2">
+						<p class='caption'><span>Guernica</span></p>
+						<img src="img/guernica.jpg" />
+					</a>
+					<a href="img/picasso.jpg">
+						<p class='caption'><span>Lorem ipsum dolor sit amet.</span></p>
+						<img src="img/picasso.jpg" />
+					</a>
+					<a href="img/picasso2.jpg">
+						<p class='caption'><span>Vogel</span></p>
+						<img src="img/picasso2.jpg" />
+					</a>
+					<a href="img/picasso_and_a_gun.jpg">
+						<p class='caption'><span>Picasso</span></p>
+						<img src="img/picasso_and_a_gun.jpg" />
+					</a>
+					<a href="img/picasso_drawing.jpg">
+						<p class='caption'><span>Zeichnung</span></p>
+						<img src="img/picasso_drawing.jpg" />
+					</a>
+					<a href="img/women_of_algiers.jpg">
+						<p class='caption'><span>Frauen von Algier</span></p>
+						<img src="img/women_of_algiers.jpg" />
+					</a>
+					<a href="img/senoritas_de_avignon.jpg">
+						<p class='caption'><span>Senoritas de Avignon</span></p>
+						<img src="img/senoritas_de_avignon.jpg" />
+					</a>
+					<a href="img/muse_de_picasso.jpg">
+						<p class='caption'><span>Zeichnung</span></p>
+						<img src="img/muse_de_picasso.jpg" />
+					</a>
+				</div>  
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+			</div>
+		</div>
+        
+		
+			
+		</div>
+		
+    </body>
+</html>
