@@ -1,0 +1,84 @@
+/* Responsive Image */
+.responsive-image{
+    max-width: 100% !important; 
+	display: block !important; 
+	height: auto !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Zentrierung von allem */
+.allpages{
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Layout Header #contentMuseum */
+#contentMuseum .header {
+	background-color: #00CC99 ;
+	color: #00674D ;
+	border-color: #00CC99 ;
+	text-shadow: none ;
+}
+
+#contentMuseum .header h1 {
+	font: 1.1em Verdana;
+	font-variant: small-caps;
+}
+
+/* Layout Button #contentMuseum  */
+#contentMuseum .ui-btn {
+	background-color: #00CC99;
+	border-color: #00CC99;
+	text-shadow: none;
+	color: #00674D;
+	outline: none;
+	box-shadow: none;
+	outline: 0;
+	height: 22px;
+	top: 3px;
+}
+
+/* Layout Hyperlink-Button */
+#contentMuseum .hyperlink {
+	font-family: Verdana;
+	font-size: 15px;
+	color: #555555;
+	font-variant: small-caps;
+	font-weight: 500;
+	background-color: #1d1d1d;
+	border: 0.15em solid #292929;
+	border-radius: 0px 0px 10px 10px;
+	padding-top: 12px;
+}
+
+/* Layout Kacheln */
+#contentMuseum .contentTiles {
+	background-color: #1d1d1d;
+	border: 1.5em solid #252525;
+	border-radius: 40px;
+}
+
+#contentMuseum .contentTiles h1 {
+	font: 1.8em Verdana;
+	font-variant: small-caps;
+}
+
+#contentMuseum .contentTiles h2 {
+	font: 1.2em Verdana;
+}
+
+/* Layout Footer #contentMuseum  */
+#contentMuseum  .footer {
+	font-variant: small-caps;
+	background-color: #00CC99 ;
+	color: #00674D ;
+	border-color: #00CC99 ;
+	text-shadow: none ;
+}
+
+/* keine Outline bei Image Map */
+area { 
+	outline: none; 
+} 
+

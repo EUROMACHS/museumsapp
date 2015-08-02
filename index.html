@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/jquery-tilesgallery.css" />
 		<link rel="stylesheet" href="css/jquery.mobile.min.css" /> 
 		<!-- eigenes CSS --> 
-		
+		<link rel="stylesheet" href="css/eigenes.css" />
         <!-- JQuery -->
 		<script src="js/vendor/jquery-1.8.3.min.js"></script> 
 		<script src="js/vendor/jquery.mobile.min.js"></script>
@@ -15,47 +15,19 @@
 		<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
 		<!-- eigenes JQuery -->
 		<script src="js/museumsapp.js"></script>
-	
-		<script>
-			
-			<!-- für Kachel-Galerie --> 
-			
-			$(function () {
-                $(".tiles").tilesGallery({
-                    tileMinHeight: 200
-                });
-            });   
-
-			<!-- für Image Map --> 
-			$(document).ready(function(ev) {
-
-				$( window ).hashchange(function() {
-					 setTimeout( function() {
-					$('img[usemap]').rwdImageMaps();
-					},200);
-				});
-				
-			<!-- für Popup in der Image Map -->	
-				$('area').on('click', function(event) {
-                    event.preventDefault();/* wenn man diese Zeile entfernt öffnet/schließt sich Popup sofort */
-                    var sel= $(this).attr('href');
-                    $(sel).popup("open")
-                });
-			});
-			
-        </script>	
-       
+		       
     </head>
-    <body id="contentMuseum" class="allpages">
+    
+	<body id="contentMuseum" class="allpages">
         
 		<!-- Galerie-Seite --> 
 			<div data-role="page" id="seiteMuseoReinaSofia" data-theme="b">
 				
 				<div data-role="header" class="header">
-					<a href="#seite1" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left" data-transition="fade"></a>
+					<a href="#seiteMuseoReinaSofia" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left" data-transition="fade"></a>
 					<h1>Wo sind Picassos Werke!</h1>
-					<a href="#myPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right" ></a>
-					<div data-role="popup" id="myPopup4">
+					<a href="#contentInfo1" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right" ></a>
+					<div data-role="popup" id="contentInfo1">
 					  <p>Klicke auf die Kacheln um mehr über die Werke von Picasso zu erfahren.</p>
 					</div>
 				</div>
@@ -64,35 +36,35 @@
 					<h1>Museo Reina Sofia</h1>
 					<p>Hier findest du Picassos Werke, die im Museo Reina Sofia zu finden sind.</p>
 					<div id="example" class="tiles">
-						<a href="#seiteGuernica">
+						<a href="./objekte.html#seiteGuernica" data-ajax="false">
 							<p class='caption'><span>Guernica</span></p>
 							<img src="img/guernica.jpg" />
 						</a>
-						<a href="#seiteToterVogel">
+						<a href="./objekte.html#seiteToterVogel" data-ajax="false">
 							<p class='caption'><span>Les oiseaux morts (Toter Vogel)</span></p>
 							<img src="img/dead_bird.jpg" />
 						</a>
-						<a href="#seiteFrauInBlau">
+						<a href="./objekte.html#seiteFrauInBlau" data-ajax="false">
 							<p class='caption'><span>Mujier en azul (Frau in Blau)</span></p>
 							<img src="img/woman_in_blue.jpg" />
 						</a>
-						<a href="">
+						<a href="./objekte.html#" data-ajax="false">
 							<p class='caption'><span>Picasso</span></p>
 							<img src="img/picasso_and_a_gun.jpg" />
 						</a>
-						<a href="">
+						<a href="./objekte.html#" data-ajax="false">
 							<p class='caption'><span>Zeichnung</span></p>
 							<img src="img/picasso_drawing.jpg" />
 						</a>
-						<a href="">
+						<a href="./objekte.html#" data-ajax="false">
 							<p class='caption'><span>Frauen von Algier</span></p>
 							<img src="img/women_of_algiers.jpg" />
 						</a>
-						<a href="">
+						<a href="./objekte.html#" data-ajax="false">
 							<p class='caption'><span>Senoritas de Avignon</span></p>
 							<img src="img/senoritas_de_avignon.jpg" />
 						</a>
-						<a href="">
+						<a href="./objekte.html#" data-ajax="false">
 							<p class='caption'><span>Zeichnung</span></p>
 							<img src="img/muse_de_picasso.jpg" />
 						</a>
@@ -105,127 +77,6 @@
 					<h4>&copy; Nijole &amp; Kerstin</h4>
 				</div>
 			</div>
-		
-        
-		<!-- Detail-Ansicht von Guernica --> 
-		<div data-role="page" id="seiteGuernica">
-			
-			<div data-role="header">
-				<a href="#seiteMuseoReinaSofia" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" data-transition="fade">Home</a>
-				<h1>Wo sind Picassos Werke!</h1>
-				<a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-info ui-btn-icon-right">App-Info</a>
-				<div data-role="popup" id="myPopup3">
-				  <p>Klicke auf die Details im Bild um Zusatz-Informationen zu erhalten.</p>
-				</div>
-			</div>
-			
-			<div data-role="content" >
-				<h1>Guernica</h1>
-				<h2>1937 | Öl auf Leinwand | 349 x 777 cm | Museo Reina Sofia</h2>
-				<img src="img/marker/m_guernica.jpg" alt="Guernica" title="Guernica" class="responsive-image" usemap="#imagemapGuernica"/>
-					<map name="imagemapGuernica" >
-						<area shape="rect" coords="24,104,738,472" href="#popupGuernica1" data-rel="popup" alt="Stier" title="Stier" />
-						<area shape="rect" coords="1346,546,2148,962" href="#popupGuernica2" data-rel="popup" alt="Menschen" title="Menschen" />
-						<area shape="rect" coords="2432,2,3187,422" href="#popupGuernica3" data-rel="popup" alt="Brennendes Haus" title="Brennendes Haus" />
-					</map>
-				<div data-role="popup" id="popupGuernica1">
-					<p>Viele Dinge im Bild 
-							bleiben rätselhaft, vor allem die inhaltiche Bedeutung des mächtigen Stieres. Er kann als Zeichen für die Brutalität der Angreifer ebenso 
-							gelesen werden wie als Zeichen für das bedrohte Spanien.</p>
-				</div>
-				<div data-role="popup" id="popupGuernica2">
-					<p>Hier stellt Picasso das Leid der Bevölkerung Guernicas dar. Fliehende Menschen mit schmerz- und angstverzerrten Gesichtern türmen sich in der gesamten unteren Bildhälfte.</p>
-				</div>	
-				<div data-role="popup" id="popupGuernica3">
-					<p>Die totbringenden Bomben sind in Picassos Werk nicht zu sehen. Die folgen der Attacke stellt der Künstler durch das brennende Haus und die gehetzten Menschen dar.</p>
-				</div>
-				
-				<p>Pablo Picasso wurde im Januar 1937 von der spanischen-republikanischen Regierung (kurzer Exkurs zur spanischen Geschichte) beauftragt, 
-				ein Wandbild für den spanischen Pavillon auf der Weltausstellung in Paris zu malen. Es sollte auf die aktuelle Situation in Spanien, 
-				den Bürgerkrieg, aufmerksam machen. Sein Bild wurde an die Wand direkt neben dem Eingang plaziert werden, da sie prominent und die einzige 
-				wettergeschützte Stelle im Erdgeschoß war. (Für das Werk wurden ihm $ 7.500 angeboten.).</p>
-			</div>
-
-			<div data-role="footer">
-				<h4>&copy; Nijole &amp; Kerstin</h4>
-			</div>
-		</div>
-			
-		<!-- Detail-Ansicht von Les oiseaux morts (Tote Vögel) --> 
-		<div data-role="page" id="seiteToterVogel">
-			
-			<div data-role="header">
-				<a href="#seiteMuseoReinaSofia" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" data-transition="fade">Home</a>
-				<h1>Wo sind Picassos Werke!</h1>
-				<a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-info ui-btn-icon-right">App-Info</a>
-				<div data-role="popup" id="myPopup3">
-				  <p>Klicke auf die Details im Bild um Zusatz-Informationen zu erhalten.</p>
-				</div>
-			</div>
-			
-			<div data-role="content" >
-				<h1>Les oiseaux morts (Tote Vögel)</h1>
-				<h2>1912 | Öl auf Leinwand | 46 x 65 cm | Museo Reina Sofia</h2>
-				<img src="img/marker/m_dead_bird.jpg" alt="Toter Vogel" title="Toter Vogel" class="responsive-image" usemap="#imagemapToterVogel"/>
-					<map name="imagemapToterVogel" >
-						<area shape="rect" coords="1017,97,2074,1251" href="#popupToterVogel1" data-rel="popup" alt="Vogel" title="Vogel" />
-						<area shape="rect" coords="85,466,770,1813" href="#popupToterVogel2" data-rel="popup" alt="Detail" title="Detail" />
-						<area shape="rect" coords="2429,1216,3118,2204" href="#popupToterVogel3" data-rel="popup" alt="Detail" title="Detail" />
-					</map>
-				<div data-role="popup" id="popupToterVogel1">
-					<p>Hier befindet sich einer der beiden Vögel, die nicht sofort jedem ins Auge springen.</p>
-				</div>
-				<div data-role="popup" id="popupToterVogel2">
-					<p>His works at the stage do not attempt to imitate reality, but, in keeping with the new methods of plastic expression, offer a different view of things, and establish a pictorial space using a monochrome and generally muted colour scheme..</p>
-				</div>	
-				<div data-role="popup" id="popupToterVogel3">
-					<p>Les oiseaux morts recreates a favourite theme during the middle years of the movement: still life, in its various forms, to which were added elements such as guitars, pipes, playing cards, glasses, plates and fruit bowls.</p>
-				</div>
-				
-				<p>Les oiseaux morts (Dead Birds) exemplifies the constants in Pablo Picasso’s Cubism, which creates a new pictorial space in which the object is defined from a number of viewpoints and is reduced to its most basic geometric forms.</p>	
-			</div>
-
-			<div data-role="footer">
-				<h4>&copy; Nijole &amp; Kerstin</h4>
-			</div>
-		</div>
-		
-		<!-- Detail-Ansicht von Mujier en azul (Frau in Blau) --> 
-		<div data-role="page" id="seiteFrauInBlau">
-			
-			<div data-role="header">
-				<a href="#seiteMuseoReinaSofia" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" data-transition="fade">Home</a>
-				<h1>Wo sind Picassos Werke!</h1>
-				<a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-info ui-btn-icon-right">App-Info</a>
-				<div data-role="popup" id="myPopup3">
-				  <p>Klicke auf die Details im Bild um Zusatz-Informationen zu erhalten.</p>
-				</div>
-			</div>
-			
-			<div data-role="content" >
-				<h1>Mujier en azul (Frau in Blau)</h1>
-				<h2>1901 | Öl auf Leinwand | 133 x 100 cm | Museo Reina Sofia</h2>
-				<img src="img/marker/m_woman_in_blue.jpg" alt="Frau in Blau" title="Frau in Blau" class="responsive-image" usemap="#imagemapFrauInBlau"/>
-					<map name="imagemapFrauInBlau" >
-						<area shape="rect" coords="449,301,1061,1003" href="#popupFrauInBlau1" data-rel="popup" alt="Dame" title="Dame" />
-					</map>
-				<div data-role="popup" id="popupFrauInBlau1">
-					<p>Viele Dinge im Bild 
-							bleiben rätselhaft, vor allem die inhaltiche Bedeutung des mächtigen Stieres. Er kann als Zeichen für die Brutalität der Angreifer ebenso 
-							gelesen werden wie als Zeichen für das bedrohte Spanien.</p>
-				</div>
-				
-				<p>Pablo Picasso wurde im Januar 1937 von der spanischen-republikanischen Regierung (kurzer Exkurs zur spanischen Geschichte) beauftragt, 
-				ein Wandbild für den spanischen Pavillon auf der Weltausstellung in Paris zu malen. Es sollte auf die aktuelle Situation in Spanien, 
-				den Bürgerkrieg, aufmerksam machen. Sein Bild wurde an die Wand direkt neben dem Eingang plaziert werden, da sie prominent und die einzige 
-				wettergeschützte Stelle im Erdgeschoß war. (Für das Werk wurden ihm $ 7.500 angeboten.).</p>
-			</div>
-
-			<div data-role="footer">
-				<h4>&copy; Nijole &amp; Kerstin</h4>
-			</div>
-		</div>
-		
 		
     </body>
 </html>
