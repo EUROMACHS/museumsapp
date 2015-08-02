@@ -32,11 +32,12 @@
 	border-color: #00CC99;
 	text-shadow: none;
 	color: #00674D;
-	outline: none;
 	box-shadow: none;
 	outline: 0;
-	height: 22px;
-	top: 3px;
+}
+
+#contentMuseum .header .ui-btn {
+	top: 9px;
 }
 
 /* Layout Hyperlink-Button */
@@ -71,10 +72,19 @@
 /* Layout Footer #contentMuseum  */
 #contentMuseum  .footer {
 	font-variant: small-caps;
-	background-color: #00CC99 ;
-	color: #00674D ;
-	border-color: #00CC99 ;
-	text-shadow: none ;
+	background-color: #00CC99;
+	color: #00674D;
+	border-color: #00CC99;
+	text-shadow: none;
+	
+}
+
+#contentMuseum .footer h4 {
+	display:inline-block;
+}
+
+#contentMuseum .footer .ui-btn {
+	top: -18px;
 }
 
 /* keine Outline bei Image Map */
