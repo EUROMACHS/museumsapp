@@ -1,5 +1,5 @@
 /* Responsive Image */
-.responsive-image{
+.responsive-image {
     max-width: 100% !important; 
 	display: block !important; 
 	height: auto !important;
@@ -40,7 +40,7 @@
 	top: 9px;
 }
 
-/* Layout Hyperlink-Button */
+/* Layout Button im Content-Bereich */
 #contentMuseum .hyperlink {
 	font-family: Verdana;
 	font-size: 15px;
@@ -53,7 +53,31 @@
 	padding-top: 12px;
 }
 
-/* Layout Kacheln */
+#contentMuseum .spielButton1 {
+	font-family: Verdana;
+	font-size: 15px;
+	color: #555555;
+	font-variant: small-caps;
+	font-weight: 500;
+	background-color: #1d1d1d;
+	border: 0.15em solid #292929;
+	border-radius: 0px 0px 0px 10px;
+	padding-top: 12px;
+}
+
+#contentMuseum .spielButton2 {
+	font-family: Verdana;
+	font-size: 15px;
+	color: #555555;
+	font-variant: small-caps;
+	font-weight: 500;
+	background-color: #1d1d1d;
+	border: 0.15em solid #292929;
+	border-radius: 0px 0px 10px 0px;
+	padding-top: 12px;
+}
+
+/* Layout Kacheln-Galerie*/
 #contentMuseum .contentTiles {
 	background-color: #1d1d1d;
 	border: 1.5em solid #252525;
@@ -76,7 +100,6 @@
 	color: #00674D;
 	border-color: #00CC99;
 	text-shadow: none;
-	
 }
 
 #contentMuseum .footer h4 {
@@ -87,8 +110,44 @@
 	top: -18px;
 }
 
-/* keine Outline bei Image Map */
+/* Kantenlose Images */
+#contentMuseum .noCorners {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+/* Keine Outline bei Image Map */
 area { 
 	outline: none; 
 } 
 
+/* Image Overlay Caption */
+.wrapper {
+	float: left;
+	position: relative;
+}
+
+div.caption {
+	position: absolute; 
+    top: 15%;  
+    left: 3em; 
+	right: 0em; 	
+    background-color: #00CC99;  
+    font-family: Verdana;  
+    font-size: 100%;  
+	font-weight: bold;
+	text-transform: uppercase;
+    color: black;  
+    opacity: 0.6;   
+    filter: alpha(opacity=60);  
+}
+
+p.caption_content {  
+    padding: 10px;  
+    margin: 0px;  
+}  
+
+#map {
+	height:  500px;
+	width: 100%;
+}
