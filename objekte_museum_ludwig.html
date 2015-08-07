@@ -16,44 +16,37 @@
         <script src="js/jquery.tiles-gallery.js"></script>
 		<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
 		<!-- eigenes JQuery -->
-		<script src="js/museumsapp.js"></script>
-		       
+		<script src="js/museumsapp.js"></script>       
     </head>
 		
 	<body id="contentMuseum" class="allpages responsive-image">	
 		
-		<!-- Detail-Ansicht von ... --> 
-		<div data-role="page" id="seite..." <!-- in der ID gehört der Bildname eingefügt --> data-theme="b"> 
+		<!-- IMAGE 1: THE OWL --> 
+		<div data-role="page" id="seiteTheOwl" data-theme="b"> 
 			
 			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
 				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
 				<h1>Picasso in Europe</h1>
 				<a href="#popupInfo1" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
-				<div data-role="popup" id="popupInfo1"> <!-- Zahl hier ist fortlaufend, also 1, 2, 3, ... --> 
+				<div data-role="popup" id="popupInfo1">
 				  <p>Click on the marker to obtain further information.</p>
-				</div>
+				</div> 
 			</div>
 			
 			<div data-role="content" class="contentTiles">
-				<h1>Bildtitel</h1>
-				<h2>1937 | Öl auf Leinwand | 349 x 777 cm | Museo Reina Sofia</h2>
-				<img src="img/marker/m_guernica.jpg" alt="Guernica" title="Guernica" class="responsive-image" usemap="#imagemapGuernica"/> <!-- statt Guernica muss der Bildtitel stehen -->
-					<map name="imagemapGuernica" >
-						<area shape="rect" coords="24,104,738,472" href="#popupGuernica1" data-rel="popup" alt="Stier" title="Stier" />
-						<area shape="rect" coords="1346,546,2148,962" href="#popupGuernica2" data-rel="popup" alt="Menschen" title="Menschen" />
-						<area shape="rect" coords="2432,2,3187,422" href="#popupGuernica3" data-rel="popup" alt="Brennendes Haus" title="Brennendes Haus" />
+				<h1>The Owl</h1>
+				<h2>1952 | Plaster | Museum Ludwig</h2>
+				<img src="img/marker/m_the_owl.jpg" alt="The Owl" title="The Owl" class="responsive-image" usemap="#imagemapTheOwl"/>
+					<map name="imagemapTheOwl" >
+						<area shape="rect" coords="42,389,448,807" href="#popupTheOwl1" data-rel="popup" alt="Detail" title="Detail" />
 					</map>
-				<div data-role="popup" id="popupGuernica1"> <!-- auch hier bildtitel rein --> 
-					<p>Inhalt des Popups</p>
-				</div>
-				<div data-role="popup" id="popupGuernica2">
-					<p>Inhalt des Popups</p>
-				</div>	
-				<div data-role="popup" id="popupGuernica3">
-					<p>Inhalt des Popups</p>
+				<div data-role="popup" id="popupTheOwl1">
+					<p>Executed in 1952, the present work is a charming example of Picasso’s limitless innovation and creative scope. The owl interested Picasso greatly, and alongside the horse and the bull, it was a subject he returned to frequently.</p>
 				</div>
 				
-				<p>...</p> <!-- hier gehört eine kurze Bilderklärung -->
+				<p>Picasso was working in the Musée d’Antibes at the Palais Grimaldi when he adopted a small owl with an injured leg. Françoise Gilot and Picasso tamed the bird and brought it back with them to Paris, keeping it in the kitchen of the studio on the rue des Grands Augustins where they also kept pigeons, canaries and turtle doves. Françoise describes Picasso’s reactions to the owl in her memoirs: ‘Every time the owl snorted at Picasso he would shout, “Cochon, Merde”, and a few other obscenities, just to show that he was even worse-mannered than him, but Picasso’s fingers, though small, were tough and the owl didn’t hurt him. Finally the owl would let him scratch his head and gradually came to perch on his finger instead of biting it, but even so, he still looked very unhappy’ (F. Gilot, <i>My Life with Picasso</i>, 1964).</p>
+				<p>The maquette for the present work was created in plaster on Christmas Day 1949. A couple of years later Picasso returned to the model and created a small edition of terracotta casts. Picasso treated these casts individually, painting them in a variety of ways, some with the dazzling monochromatic pattern found on the present work, others using colour and anthropomorphic features. A few examples of this model remained with the artist until his death and feature in numerous photographs of the artist’s studios. You can see two other painted terracotta casts from Picasso’s own collection at the Musée Picasso in Paris.</p>
+				
 				<a data-transition="fade" href="./museen.html#seiteMuseumLudwig" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Museum Ludwig</a>
 			</div>
 
@@ -62,8 +55,193 @@
 				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
 			</div>
 		</div>
+
+		<!-- IMAGE 2: VOLLARD --> 
+		<div data-role="page" id="seiteVollard" data-theme="b">
 			
-		<!-- hierher gehören die restlichen Bilder -->
+			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
+				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
+				<h1>Picasso in Europe</h1>
+				<a href="#popupInfo2" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
+				<div data-role="popup" id="popupInfo2">
+				  <p>Click on the marker to obtain further information.</p>
+				</div> 
+			</div>
+			
+			<div data-role="content" class="contentTiles">
+				<h1>Vollard Suite, Sheet 97, Block 230</h1>
+				<h2>1934 | Etching, Aquatint | 31.7 x 41.8 cm | Museum Ludwig</h2>
+				<img src="img/marker/m_vollard.jpg" alt="Vollard Suite" title="Vollard Suite" class="responsive-image" usemap="#imagemapVollard"/>
+					<map name="imagemapVollard" >
+						<area shape="rect" coords="30,364,208,608" href="#popupVollard1" data-rel="popup" alt="Detail" title="Detail" />
+					</map>
+				<div data-role="popup" id="popupVollard1">
+					<p>Picasso learnt new techniques of etching during the suite, from relatively simple line etchings, through dry point and aquatinting and sugar aquatinting, this enabled him to achieve more painterly effects. Most of the prints were completed to Picasso's satisfaction in a single state, but others, especially the erotic compositions, exist in several states, fourteen in one case.</p>
+				</div>
+				
+				<p>The Vollard Suite is a set of 100 etchings in neoclassical style, produced from 1930-37. Named for the art dealer who commissioned them, Ambroise Vollard (1866-1939), the suite is in a number of museums, and individual etchings from the suite are collectible. More than 300 sets were created, but many were broken up and the prints sold separately.</p>
+				<p>The works are not based on a literary source, and are not titled, although according to the Fundación Juan March, "Some of the themes have a remote origin in Honoré de Balzac’s short story Le Chef-d’oeuvre inconnu (The Unknown Masterpiece, 1831), which greatly impressed Picasso. It tells the story of a painter’s efforts to capture life itself on canvas through the means of feminine beauty". The works are inscribed by Picasso with the year month and day that he drew the image. Writing in the Daily Telegraph Richard Dorment claims that as Picasso took such a long time to create the suite, "the imagery and the emotional register of the prints constantly shifts to reflect Picasso's erotic and artistic obsessions, marital vicissitudes, and the darkening political situation in Europe...In the years Picasso worked on the series, fascism spread through Europe, and civil war erupted in Spain. These anxieties also found their way into the Vollard Suite, so that by the time you reach the end of the show and the last images of the blind minotaur, you feel that you are in a different emotional universe from the sunlit arcadia you encountered at the show’s beginning".</p>
+				
+				<a data-transition="fade" href="./museen.html#seiteMuseumLudwig" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Museum Ludwig</a>
+			</div>
+
+			<div data-role="footer" class="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
+			</div>
+		</div>
+
+		<!-- IMAGE 3: WOMAN WITH ARTICHOKE --> 
+		<div data-role="page" id="seiteWoman" data-theme="b">
+			
+			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
+				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
+				<h1>Picasso in Europe</h1>
+				<a href="#popupInfo3" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
+				<div data-role="popup" id="popupInfo3">
+				  <p>Click on the marker to obtain further information.</p>
+				</div> 
+			</div>
+			
+			<div data-role="content" class="contentTiles">
+				<h1>Woman with Artichoke</h1>
+				<h2>1941 | Oil on Canvas | Museum Ludwig</h2>
+				<img src="img/marker/m_woman_with_artichoke.jpg" alt="Woman with Artichoke" title="Woman with Artichoke" class="responsive-image" usemap="#imagemapWomanWithArtichoke"/> 
+					<map name="imagemapWomanWithArtichoke" >
+						<area shape="rect" coords="3,32,141,293" href="#popupWomanWithArtichoke1" data-rel="popup" alt="Artichoke" title="Artichoke" />
+						<area shape="rect" coords="7,445,291,701" href="#popupWomanWithArtichoke2" data-rel="popup" alt="Detail" title="Detail" />
+						<area shape="rect" coords="326,141,499,427" href="#popupWomanWithArtichoke3" data-rel="popup" alt="Detail" title="Detail" />
+					</map>
+				<div data-role="popup" id="popupWomanWithArtichoke1">
+					<p>The figure, which is reminiscent of a Byzantine Madonna, makes toward the back, glorious impression. Moreover, "the artichoke helps one to remember the palm leaf usually held in their grasp by saints in ahead of schedule Byzantine sketches."</p>
+				</div>
+				<div data-role="popup" id="popupWomanWithArtichoke2">
+					<p>Lady with Artichoke is a wartime picture whose unpredictability triggers numerous affiliations. It makes a threatening and, in the meantime, admonishing effect.</p>
+				</div>	
+				<div data-role="popup" id="popupWomanWithArtichoke3">
+					<p>Amid the war years Picasso, occasionally at least, deserted the endeavor to catch similarities and focused all the more on his subjects' mental state. In early 1941 he left on a progression of unacknowledged female figures, and Woman with Artichoke is one in that series.</p>
+				</div>
+				
+				<p>The woman, seated in a basketwork or metal rocker before an uncertain background, is holding an large size of artichoke in her hand. Painted during the turmoil of war, she is symbolic of fear and dread in two respects: in the first place, she speaks to the "broken, soulless, endlessly tormented individual that has relinquished its outward shape and balance on the planet in which it is forced to live"; and, also, she herself turns into "the aggressive animal that holds its warlike actualize, an immense artichoke which might likewise be deciphered as the morning star, in one hand, while the other hand, clawlike, distractedly rests on its knee." The artichoke stops to be a straightforward vegetable and turns into an instrument of torment. In such a setting, the smeared light black foundation can promptly be translated as rising billows of smoke. Picasso outlines the rationally bothered figure with firm, dull diagrams and eviscerates it with the support of inside drawing which unorganically uproots each one piece of the body against an alternate. The elaborate propensity to multivisuality is most clear in the lady's face. Facial multivisuality, as grew here, turned into one of Picasso's most vital aesthetic gadgets as ahead of schedule as 1939.<p/>
+
+				<a data-transition="fade" href="./museen.html#seiteMuseumLudwig" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Museum Ludwig</a>
+			</div>
+
+			<div data-role="footer" class="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
+			</div>
+		</div>
+
+		<!-- IMAGE 4: DORA MAAR --> 
+		<div data-role="page" id="seiteDoraMaar1" data-theme="b">
+			
+			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
+				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
+				<h1>Picasso in Europe</h1>
+				<a href="#popupInfo4" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
+				<div data-role="popup" id="popupInfo4">
+				  <p>Click on the marker to obtain further information.</p>
+				</div> 
+			</div>
+			
+			<div data-role="content" class="contentTiles">
+				<h1>Tête de femme (Dora Maar)</h1>
+				<h2>1941 | Plaster | H:80cm | Museum Ludwig</h2>
+				<img src="img/marker/m_dora_maar2.jpg" alt="Dora Maar" title="Dora Maar" class="responsive-image" usemap="#imagemapDoraMaar2"/>
+					<map name="imagemapDoraMaar2" >
+						<area shape="rect" coords="6,474,388,1223" href="#popupDoraMaar21" data-rel="popup" alt="Dora Maar" title="Dora Maar" />
+					</map>
+				<div data-role="popup" id="popupDoraMaar21">
+					<p>Picasso conceived the present sculpture first in plaster and then had it cast in bronze in an edition of four in the 1950s.</p>
+				</div>
+				
+				<p>This larger-than-life bust portrait of Dora Maar is one of Picasso's greatest achievements in the medium of sculpture. At just over three-quarters of a meter high, it conveys the model's strength of character and imposing presence as a figure in Picasso's life during the war years. It is also one of the artist's most respectful and idealized portrayals of Dora, rendered without any of the abstraction that characterized his more menacing depictions of her as the Weeping Woman. Dora's likeness here resembles that of a Greco-Roman goddess, more noble than any sculptural depiction of the other women in Picasso's life. As Barbara Thiemann and Evelyn Weiss commented about this figure, "This strong, spiritualized head, with its powerful aura of human dignity and its remoteness from violence and subjugations, seems to convey a contrast, a kind of inner resistance. It recalls the stoical serenity of the gods of the ancient world" (Barbara Thiemann and Evelyn Weiss in <i>Picasso, The Ludwig Collection</i> (exhibition catalogue), op. cit.).</p>
+				
+				<a data-transition="fade" href="./museen.html#seiteMuseumLudwig" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Museum Ludwig</a>
+			</div>
+
+			<div data-role="footer" class="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
+			</div>
+		</div>
+
+		<!-- IMAGE 5: HARLEQUIN --> 
+		<div data-role="page" id="seiteHarlequin" data-theme="b">
+			
+			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
+				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
+				<h1>Picasso in Europe</h1>
+				<a href="#popupInfo5" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
+				<div data-role="popup" id="popupInfo5">
+				  <p>Click on the marker to obtain further information.</p>
+				</div> 
+			</div>
+			
+			<div data-role="content" class="contentTiles">
+				<h1>Harlequin with Hands Folded</h1>
+				<h2>1923 | Oil on Canvas | 130 x 97 cm | Museum Ludwig</h2>
+				<img src="img/marker/m_harlequin.jpg" alt="Harlequin with Hands Folded" title="Harlequin with Hands Folded" class="responsive-image" usemap="#imagemapHarlequin"/>
+					<map name="imagemapHarlequin" >
+						<area shape="rect" coords="291,82,465,305" href="#popupHarlequin1" data-rel="popup" alt="Harlequin" title="Harlequin" />
+						<area shape="rect" coords="5,392,168,633" href="#popupHarlequin2" data-rel="popup" alt="Detail" title="Detail" />
+					</map>
+				<div data-role="popup" id="popupHarlequin1">
+					<p>Harlequin is also a established character of Punch and Judy theatre who in his local forms of 'Christoforo' and 'Pulchinelli', was a popular feature of Barcelona street life at the turn of century.</p>
+				</div>
+				<div data-role="popup" id="popupHarlequin2">
+					<p>Picasso undoubtedly saw many such performances at this time, he even assisted in some of Pére Romeu's puppet shows at Els Quatre Ghats and he would have also seen re-enactments of Harlequin's triumph over Death in Barcelona's annual street carnivals.</p>
+				</div>
+				
+				<p>Picasso's best known alter ego is the Harlequin, a mysterious character with classical origins who has long been associated with the god Mercury and with Alchemy and the Underworld. Harlequin's traditional capacities to become invisible and to travel to any part of the world and to take on other forms were said to have been gifts bestowed on him by Mercury. It was also said that the secrets of Alchemy were to be found concealed within the Harlequinade.</p>
+								
+				<a data-transition="fade" href="./museen.html#seiteMuseumLudwig" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Museum Ludwig</a>
+			</div>
+
+			<div data-role="footer" class="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
+			</div>
+		</div>
+
+		<!-- IMAGE 6: THE KISS --> 
+		<div data-role="page" id="seiteTheKiss" data-theme="b">
+			
+			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
+				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
+				<h1>Picasso in Europe</h1>
+				<a href="#popupInfo6" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
+				<div data-role="popup" id="popupInfo6">
+				  <p>Click on the marker to obtain further information.</p>
+				</div> 
+			</div>
+			
+			<div data-role="content" class="contentTiles">
+				<h1>The Kiss</h1>
+				<h2>1969 | Oil on Canvas | 146 x 114 cm | Museum Ludwig</h2>
+				<img src="img/marker/m_the_kiss.jpg" alt="The Kiss" title="The Kiss" class="responsive-image" usemap="#imagemapTheKiss"/> 
+					<map name="imagemapTheKiss" >
+						<area shape="rect" coords="6,69,204,357" href="#popupTheKiss1" data-rel="popup" alt="Kiss" title="Kiss" />
+						<area shape="rect" coords="435,515,645,804" href="#popupTheKiss2" data-rel="popup" alt="Detail" title="Detail" />
+					</map>
+				<div data-role="popup" id="popupTheKiss1"> 
+					<p>There are speculations that The Kiss is an extension of the "artist-and-model theme", for the reason that the man is completely dressed while the woman is naked. He might also, in view of his beard and large hat, represent a modification of The Musketeer.</p>
+				</div>
+				<div data-role="popup" id="popupTheKiss2">
+					<p>However the "couple kissing" topic was not new to Picasso. In the winter of 1969/70; he had painted an extraordinary picture on the same subject in 1925. Unquestionably the work demonstrated here indicates no feeling of dormant hostility or open antagonistic vibe between the sexes. The impression created by this picture is generally peaceful and, not least because of its gentle coloration, harmonious.</p>
+				</div>	
+								
+				<p>Amid the fall of 1969 and the following winter Picasso investigated an alternate variation of the omnipresenttheme, love; he continued to fill an entire arrangement of canvases with couples kissing. Some of the time they are portrayed full-length, lying down, embracing; sometimes genital sexuality predominates.</p>
+				
+				<a data-transition="fade" href="./museen.html#seiteMuseumLudwig" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Museum Ludwig</a>
+			</div>
+
+			<div data-role="footer" class="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
+			</div>
+		</div>
 		
 	</body>
 </html>

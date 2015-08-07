@@ -11,49 +11,47 @@
 		<!-- eigenes CSS --> 
 		<link rel="stylesheet" href="css/eigenes.css" />
         <!-- JQuery -->
-		<script src="js/vendor/jquery-1.8.3.min.js"></script> 
-		<script src="js/vendor/jquery.mobile.min.js"></script>
-        <script src="js/jquery.tiles-gallery.js"></script>
-		<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery-1.8.3.min.js"></script> 
+		<script type="text/javascript" src="js/vendor/jquery.mobile.min.js"></script>
+        <script type="text/javascript" src="js/jquery.tiles-gallery.js"></script>
+		<script type="text/javascript" type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
 		<!-- eigenes JQuery -->
-		<script src="js/museumsapp.js"></script>
-		       
+		<script type="text/javascript" src="js/museumsapp.js"></script>
+		
     </head>
 		
 	<body id="contentMuseum" class="allpages responsive-image">	
 		
-		<!-- Detail-Ansicht von ... --> 
-		<div data-role="page" id="seite..." <!-- in der ID gehört der Bildname eingefügt --> data-theme="b"> 
+		
+		<!-- IMAGE 1: Nude Woman in a Red Armchair --> 
+		<div data-role="page" id="seiteNude" data-theme="b">
 			
 			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
 				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
 				<h1>Picasso in Europe</h1>
 				<a href="#popupInfo1" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
-				<div data-role="popup" id="popupInfo1"> <!-- Zahl hier ist fortlaufend, also 1, 2, 3, ... --> 
+				<div data-role="popup" id="popupInfo1"> 
 				  <p>Click on the marker to obtain further information.</p>
-				</div>
+				</div> 
 			</div>
 			
 			<div data-role="content" class="contentTiles">
-				<h1>Bildtitel</h1>
-				<h2>1937 | Öl auf Leinwand | 349 x 777 cm | Museo Reina Sofia</h2>
-				<img src="img/marker/m_guernica.jpg" alt="Guernica" title="Guernica" class="responsive-image" usemap="#imagemapGuernica"/> <!-- statt Guernica muss der Bildtitel stehen -->
+				<h1>Nude Woman in a Red Armchair</h1>
+				<h2>1932 | Oil on Canvas | 1299 x 972 mm | Tate Modern</h2>
+				<img src="img/marker/m_nude.jpg" alt="Nude Woman in a Red Armchair" title="Nude Woman in a Red Armchair" class="responsive-image" usemap="#imagemapGuernica"/>
 					<map name="imagemapGuernica" >
-						<area shape="rect" coords="24,104,738,472" href="#popupGuernica1" data-rel="popup" alt="Stier" title="Stier" />
-						<area shape="rect" coords="1346,546,2148,962" href="#popupGuernica2" data-rel="popup" alt="Menschen" title="Menschen" />
-						<area shape="rect" coords="2432,2,3187,422" href="#popupGuernica3" data-rel="popup" alt="Brennendes Haus" title="Brennendes Haus" />
+						<area shape="rect" coords="11,43,247,276" href="#popupGuernica1" data-rel="popup" alt="Marie" title="Marie" />
+						<area shape="rect" coords="391,420,532,653" href="#popupGuernica2" data-rel="popup" alt="Detail" title="Detail" />
 					</map>
-				<div data-role="popup" id="popupGuernica1"> <!-- auch hier bildtitel rein --> 
-					<p>Inhalt des Popups</p>
+				<div data-role="popup" id="popupGuernica1">
+					<p>For many years Marie-Thérèse Walter was Picassos lover and muse. He was stunned by her beautiful and graceful appearance. In most portraits Marie-Thérèse appears as blonde, sunny and bright</p>
 				</div>
 				<div data-role="popup" id="popupGuernica2">
-					<p>Inhalt des Popups</p>
+					<p>When Marie-Thérèse became pregnant, Picasso and his wife Olga separated. However, they have never been divorced due to the French law that dictates division of the property between divorcees. Picasso wanted to avoid this circumstance.</p>
 				</div>	
-				<div data-role="popup" id="popupGuernica3">
-					<p>Inhalt des Popups</p>
-				</div>
 				
-				<p>...</p> <!-- hier gehört eine kurze Bilderklärung -->
+				<p>This work belongs to the remarkable sequence of portraits that Picasso made of Marie-Thérèse Walter at his country property at Boisgeloup. Marie-Thérèse is presented here – as in most of her portraits – as a series of sensuous curves. Even the scrolling arms of the chair have been heightened and exaggerated to echo the rounded forms of her body. The face is a double or metamorphic image: the right side can also be seen as the face of a lover in profile, kissing her on the lips.</p>
+				
 				<a data-transition="fade" href="./museen.html#seiteTateModern" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Tate Modern</a>
 			</div>
 
@@ -62,8 +60,182 @@
 				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
 			</div>
 		</div>
-			
-		<!-- hierher gehören die restlichen Bilder -->
 		
+		<!-- IMAGE 2: Nude, Green leaves and Bust --> 
+		<div data-role="page" id="seiteNude2" data-theme="b">
+			
+			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
+				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
+				<h1>Picasso in Europe</h1>
+				<a href="#popupInfo2" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
+				<div data-role="popup" id="popupInfo2"> 
+				  <p>Click on the marker to obtain further information.</p>
+				</div>
+			</div>
+			
+			<div data-role="content" class="contentTiles">
+				<h1>Nude, Green leaves and Bust</h1>
+				<h2>1932 | Oil on Canvas | 1640 x 1320 mm | Tate Modern</h2>
+				<img src="img/marker/m_nude2.jpg" alt="Nude, Green leaves and Bust" title="Nude, Green leaves and Bust" class="responsive-image" usemap="#imagemapNude2"/> 
+					<map name="imagemapNude2" >
+						<area shape="rect" coords="20,95,336,508" href="#popupNude21" data-rel="popup" alt="Nude" title="Nude" />
+						<area shape="rect" coords="575,700,1055,1095" href="#popupNude22" data-rel="popup" alt="Curtain" title="Curtain" />
+					</map>
+				<div data-role="popup" id="popupNude21">
+					<p>The setting includes a secretive curtain against which the sculptural bust casts a double shadow, as if the white of the foreground nude was literally illuminating the space.</p>
+				</div>
+				<div data-role="popup" id="popupNude22">
+					<p>Made on 8 March 1932, Nude, Green Leaves and Bust is the most intense among the group of large nudes, counterpointing the real head with a sculpted head, and the folds of Marie-Thérèse’s body with the luxuriant forms of a philodendron plant.</p>
+				</div>	
+				
+				<p>Picasso first encountered Marie-Thérèse Walter in January 1927. He kept their relationship secret for many years, even from some of his closest friends, but particularly from his wife Olga. In 1931-2 he embarked on a series of sculptures and paintings of Marie-Thérèse, made at his studio in the Chateau de Boisgeloup, which he had purchased in 1930. Picasso’s habit of dating his work very precisely makes it possible to trace the development of this sequence as Picasso discovered an increasingly complex manipulation of her body.</p>
+				
+				<a data-transition="fade" href="./museen.html#seiteTateModern" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Tate Modern</a>
+			</div>
+
+			<div data-role="footer" class="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
+			</div>
+		</div>
+		
+		<!-- IMAGE 3: Bottle of Vieux Marc, Glass, Guitar and Newspaper --> 
+		<div data-role="page" id="seiteBottle" data-theme="b">
+			
+			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
+				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
+				<h1>Picasso in Europe</h1>
+				<a href="#popupInfo3" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
+				<div data-role="popup" id="popupInfo3">
+				  <p>Click on the marker to obtain further information.</p>
+				</div> 
+			</div>
+			
+			<div data-role="content" class="contentTiles">
+				<h1>Bottle of Vieux Marc, Glass, Guitar and Newspaper</h1>
+				<h2>1913 | Printed papers and ink on paper | 467 x 625 mm | Tate Modern</h2>
+				<img src="img/marker/m_bottle.jpg" alt="Bottle of Vieux Marc, Glass, Guitar and Newspaper" title="Bottle of Vieux Marc, Glass, Guitar and Newspaper" class="responsive-image" usemap="#imagemapCollage"/> 
+					<map name="imagemapCollage" >
+						<area shape="rect" coords="232,316,534,540" href="#popupCollage1" data-rel="popup" alt="Collage" title="Collage" />
+					</map>
+				<div data-role="popup" id="popupCollage1">
+					<p>The newspaper in this work may have been chosen for its faded colour, since it was already nearly thirty years old when Picasso used it.</p>
+				</div>
+				
+				<p>Picasso and Braque first began to make collages, or papiers collés, in 1912. The use of cut papers, and in particular clippings from newspapers, seemed a natural extension of their earlier experiments with stencilled lettering. Whereas their earlier Cubist works had involved deconstructing objects into their component parts and planes, works like this one sought to construct a unified composition from abstracted fragments of the objects depicted.</p>
+				
+				<a data-transition="fade" href="./museen.html#seiteTateModern" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Tate Modern</a>
+			</div>
+
+			<div data-role="footer" class="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
+			</div>
+		</div>
+		
+		<!-- IMAGE 4: Weeping Woman --> 
+		<div data-role="page" id="seiteWeeping" data-theme="b">
+			
+			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
+				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
+				<h1>Picasso in Europe</h1>
+				<a href="#popupInfo4" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
+				<div data-role="popup" id="popupInfo4"> 
+				  <p>Click on the marker to obtain further information.</p>
+				</div>
+			</div>
+			
+			<div data-role="content" class="contentTiles">
+				<h1>Weeping Woman</h1>
+				<h2>1937 | Oil on Canvas | 608 x 500 mm | Tate Modern</h2>
+				<img src="img/marker/m_weeping_woman.jpg" alt="Weeping Woman" title="Weeping Woman" class="responsive-image" usemap="#imagemapWeepingWoman"/> 
+					<map name="imagemapWeepingWoman" >
+						<area shape="rect" coords="373,87,581,440" href="#popupWeepingWoman1" data-rel="popup" alt="Woman" title="Woman" />
+					</map>
+				<div data-role="popup" id="popupWeepingWoman1">
+					<p>The woman's features are based on Picasso’s lover Dora Maar.</p>
+				</div>
+			
+				<p>One of the worst atrocities of the Spanish Civil War was the bombing of the Basque town of Guernica by the German air force, lending their support to the Nationalist forces of General Franco. Picasso responded to the massacre by painting the vast mural <i>Guernica</i>, and for months afterwards he made subsidiary paintings based on one of the figures in the mural: a weeping woman holding her dead child. <i>Weeping Woman</i> is the last and most elaborate of the series.</p>
+				
+				<a data-transition="fade" href="./museen.html#seiteTateModern" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Tate Modern</a>
+			</div>
+
+			<div data-role="footer" class="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
+			</div>
+		</div>
+
+		<!-- IMAGE 5: Seated Woman in a Chemise --> 
+		<div data-role="page" id="seiteSeated" data-theme="b">
+			
+			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
+				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
+				<h1>Picasso in Europe</h1>
+				<a href="#popupInfo5" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
+				<div data-role="popup" id="popupInfo5">
+				  <p>Click on the marker to obtain further information.</p>
+				</div>
+			</div>
+			
+			<div data-role="content" class="contentTiles">
+				<h1>Seated Woman in a Chemise</h1>
+				<h2>1923 | Oil on Canvas | 921 x 730 mm | Tate Modern</h2>
+				<img src="img/marker/m_seated_woman.jpg" alt="Seated Woman in a Chemise" title="Seated Woman in a Chemise" class="responsive-image" usemap="#imagemapSeatedWoman"/> 
+					<map name="imagemapSeatedWoman" >
+						<area shape="rect" coords="13,8,175,195" href="#popupSeatedWoman1" data-rel="popup" alt="Sky" title="Sky" />
+					</map>
+				<div data-role="popup" id="popupSeatedWoman1"> 
+					<p>In this picture the blue sky, as well as the strong light, evoke the Mediterranean.</p>
+				</div>
+				
+				<p>From 1917 Picasso made overt reference to the art of the ancient world in many of his paintings. Here the figure's facial features, the soft drapes of her dress and her apparent composure recall the grace and naturalism of fifth-century B.C. Greek sculptures. However, the massiveness of her limbs and her immobility appear to echo earlier antique art, or later Roman copies of Greek models. The ambiguity and potential for irony in this admixture of references were essential elements in Picasso's approach to the art of the past. In this picture the blue sky, as well as the strong light, evoke the Mediterranean.</p>
+				
+				<a data-transition="fade" href="./museen.html#seiteTateModern" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Tate Modern</a>
+			</div>
+
+			<div data-role="footer" class="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
+			</div>
+		</div>
+	
+		<!-- IMAGE 6: Head of a Woman --> 
+		<div data-role="page" id="seiteHead" data-theme="b">
+			
+			<div data-role="header" data-position="fixed" data-id="navStay" class="header">
+				<a href="./map.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="fade"></a>
+				<h1>Picasso in Europe</h1>
+				<a href="#popupInfo6" data-rel="popup" class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-right ui-btn-icon-notext"></a>
+				<div data-role="popup" id="popupInfo6"> 
+				  <p>Click on the marker to obtain further information.</p>
+				</div>
+			</div>
+			
+			<div data-role="content" class="contentTiles">
+				<h1>Head of a Woman</h1>
+				<h2>1924 | Oil on Canvas | 345 x 265 mm | Tate Modern</h2>
+				<img src="img/marker/m_head_of_woman.jpg" alt="Head of a Woman" title="Head of a Woman" class="responsive-image" usemap="#imagemapHead"/>
+					<map name="imagemapHead" >
+						<area shape="rect" coords="7,925,447,1347" href="#popupHead1" data-rel="popup" alt="Head" title="Head" />
+					</map>
+				<div data-role="popup" id="popupHead1">
+					<p>Picasso's <i>Head of a Woman</i> is a small, intimate painting of a female head in a classical, pensive pose. The colour is non-naturalistic and the features of the head summary. No specific sitter is known, and the anonymous title is probably an imposition as Picasso did not usually title his work. He signed and dated the painting 'Picasso 24', in the top right-hand corner, but the stretcher bears the inscription 'February 1925'. This may suggest that he began <i>Head of a Woman</i> at the end of 1924.</p>
+				</div>
+				
+				<p>The woman's face divides into two distinct halves, recalling the multi-facetted subjects of Picasso's Cubist paintings of the early 1920s. The divided portrait expresses two sides of the woman, as though viewed from different angles, or possibly a combined male-female head. Picasso marked out the features with a few schematic lines in dark brown paint on flat areas of pink and white. A muted earth tone covers the background and a patch of sienna designates the shoulder of the woman's dress. Picasso appears to have incised the lines in the thick impasto with the handle of a paintbrush. He used simple forms, such as the triangle and ellipse of the eyes. She is shown with her head on a claw-like hand, with an erratic line forming the woman's fingers.</p>
+				
+				<p><i>Head of a Woman</i> typifies Picasso's freer style of 1923-4, in which he began to move away from his classicising tendency and his geometric Cubism. Alfred Barr (1902-81), the founding director in 1929 of the Museum of Modern Art in New York, named Picasso's art of 1923-4 'curvilinear' Cubism, due to its exclusion of rectilinear geometry. For Barr, this style was distinguished by 'a flattening of volume and space, the overlapping and transparency of planes and simultaneity of points of view, disintegration and recombination and generally the independence of colour, form, space and texture without abandoning all reference to nature' (Barr, p.132). During 1924, Picasso was being courted by the founder of the Surrealist group, André Breton (1896-1966), who viewed the artist's Cubist painting as a forerunner of Surrealism. This interest encouraged Picasso's new direction towards the powerful expression found in such paintings as <i>The Three Dancers</i> 1925.</p>
+				
+				<a data-transition="fade" href="./museen.html#seiteTateModern" data-ajax="false" class="ui-btn ui-shadow ui-mini hyperlink">Back to the tiles gallery of the Tate Modern</a>
+			</div>
+
+			<div data-role="footer" class="footer">
+				<h4>&copy; Nijole &amp; Kerstin</h4>
+				<a href="./about.html" data-ajax="false" class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-right ui-btn-icon-notext"></a>
+			</div>
+		</div>
+
 	</body>
 </html>
